@@ -1,0 +1,54 @@
+.comments {
+  display: block;
+  width: 80%;
+  height: 30vh;
+  display: flex;
+  gap: 4rem;
+
+  div {
+    flex: 1;
+    width: 33%;
+  }
+
+  &__card {
+    padding: 4rem;
+    background-color: $color-main;
+    border-radius: 2rem;
+
+    &:first-child {
+      transform: translateY(-2.5rem);
+    }
+
+    &:last-child {
+      transform: translateY(2.5rem);
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    &--img {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+    }
+
+    &--name {
+      font-size: 1.6rem;
+      color: $color-wight;
+    }
+
+    &--addres {
+      font-size: 1.6rem;
+      color: $color-tertiary;
+    }
+
+    &--comment {
+      padding-top: 1.5rem;
+      color: $color-wight;
+      font-size: 1.6rem;
+    }
+  }
+}
